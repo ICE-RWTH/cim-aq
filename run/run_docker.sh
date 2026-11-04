@@ -22,7 +22,7 @@ SCRIPT_DIR="$( cd -P "$( dirname "$SOURCE" )" >/dev/null 2>&1 && pwd )"
 PROJECT_DIR=${SCRIPT_DIR}/..
 
 # Defaults
-IMAGE="ghcr.io/jmkle/cim-aq:latest"
+IMAGE="ghcr.io/ice-rwth/cim-aq:latest"
 GPU_FLAG="--gpus all"
 PULL_IMAGE="auto"
 
@@ -52,7 +52,7 @@ EXAMPLES:
     $0 --test                                       # Test workflow
     $0 config.yaml                                  # Custom workflow
     $0 --tag main --test                            # Use main branch
-    $0 --image ghcr.io/jmkle/cim-aq:pr-123 --test   # Use specific image
+    $0 --image ghcr.io/ice-rwth/cim-aq:pr-123 --test   # Use specific image
     $0 --pull always --test                         # Always pull latest before testing
     $0 --pull never --test                          # Use local image only
     $0 --gpu 0,1 --test                             # Use GPUs 0 and 1

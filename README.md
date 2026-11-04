@@ -10,8 +10,8 @@ here: https://github.com/mit-han-lab/haq/
 
 # CIM-AQ: CIM-aware Automated Quantization with Mixed Precision
 
-[![Style](https://github.com/jmkle/cim-aq/actions/workflows/style.yml/badge.svg)](https://github.com/jmkle/cim-aq/actions/workflows/style.yml)
-[![Build and Test](https://github.com/jmkle/cim-aq/actions/workflows/build-and-test.yml/badge.svg)](https://github.com/jmkle/cim-aq/actions/workflows/build-and-test.yml)
+[![Style](https://github.com/ICE-RWTH/cim-aq/actions/workflows/style.yml/badge.svg)](https://github.com/ICE-RWTH/cim-aq/actions/workflows/style.yml)
+[![Build and Test](https://github.com/ICE-RWTH/cim-aq/actions/workflows/build-and-test.yml/badge.svg)](https://github.com/ICE-RWTH/cim-aq/actions/workflows/build-and-test.yml)
 [![DOI](https://img.shields.io/badge/doi-10.23919%2Fdate69613.2026.11539262-blue)](https://doi.org/10.23919/date69613.2026.11539262)
 
 This repository contains the PyTorch implementation of CIM-AQ: CIM-aware Automated Quantization with Mixed Precision.
@@ -70,7 +70,7 @@ For consistent environments and easy deployment, we provide a Docker image for C
 ./run/run_docker.sh --tag main --data /path/to/imagenet my_config.yaml
 
 # Use a specific image and run tests
-./run/run_docker.sh --image ghcr.io/jmkle/cim-aq:pr-123 --test
+./run/run_docker.sh --image ghcr.io/ice-rwth/cim-aq:pr-123 --test
 
 # GPU options: all (default), none, specific devices
 ./run/run_docker.sh --gpu all --test
@@ -82,9 +82,9 @@ This project is designed to run rootless, so you can also use `podman`. Make sur
 
 **Available Images:**
 
-- `ghcr.io/jmkle/cim-aq:latest` (main branch)
-- `ghcr.io/jmkle/cim-aq:<branch-name>` (feature branches)
-- `ghcr.io/jmkle/cim-aq:pr-<number>` (PRs, auto-cleaned)
+- `ghcr.io/ice-rwth/cim-aq:latest` (main branch)
+- `ghcr.io/ice-rwth/cim-aq:<branch-name>` (feature branches)
+- `ghcr.io/ice-rwth/cim-aq:pr-<number>` (PRs, auto-cleaned)
 
 **GPU Requirements:** [NVIDIA Container Toolkit](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.html) + CUDA 12.9.1 compatible drivers
 
@@ -160,10 +160,10 @@ CIM-AQ includes automated GitHub Actions CI/CD that builds, tests, and publishes
 
 **Supporting Workflows**:
 
-- **Code Quality** ([`.github/workflows/formatting.yml`](.github/workflows/formatting.yml)): Validates code formatting
+- **Code Quality** ([`.github/workflows/style.yml`](.github/workflows/style.yml)): Validates code formatting
 - **Container Cleanup** ([`.github/workflows/cleanup-pr-containers.yml`](.github/workflows/cleanup-pr-containers.yml)): Removes old containers
 
-**Available Images**: `ghcr.io/jmkle/cim-aq:latest` (main), `ghcr.io/jmkle/cim-aq:<branch>` (branches), `ghcr.io/jmkle/cim-aq:pr-<number>` (PRs)
+**Available Images**: `ghcr.io/ice-rwth/cim-aq:latest` (main), `ghcr.io/ice-rwth/cim-aq:<branch>` (branches), `ghcr.io/ice-rwth/cim-aq:pr-<number>` (PRs)
 
 ## Dataset
 

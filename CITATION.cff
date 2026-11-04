@@ -1,5 +1,6 @@
 cff-version: 1.2.0
 message: If you find this repository helpful, please consider citing the corresponding paper as below.
+repository-code: https://github.com/ICE-RWTH/cim-aq
 preferred-citation:
   authors:
     - family-names: Pelke
